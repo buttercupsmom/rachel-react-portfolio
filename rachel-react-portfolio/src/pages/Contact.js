@@ -13,11 +13,18 @@ function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
   };
+  // let emailArray = [];
+  // let contactForm = document.forms["contactForm"];
+  // if (!contactForm) {
+  //   contactForm = document.contactForm;
+  // }
+  // let email = contactForm.email.value;
+  // emailArray.push(email);
 
   return (
     <div>
       <div className="container">
-        <h1>CONTACT</h1>
+        <h1 href="#contact">Contact</h1>
         <ul>
           <li>
             <a href="https://github.com/buttercupsmom">GitHub</a>
@@ -31,13 +38,13 @@ function Contact() {
           <li>
             <a href="mailto:yarkony.rachel@gmail.com">Email</a>
           </li>
-          <li>
+          <li href="#resume">
             <a
               href="https://docs.google.com/document/d/1X41EEi76ObMWuU3gg6Rn042EGSM_k7YO-PbP_cxsOKs/edit?usp=sharing"
               target="{_blank}"
               rel="noopener noreferrer"
             >
-              Resume
+              Resume --click to download!
             </a>
           </li>
         </ul>

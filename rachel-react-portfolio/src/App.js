@@ -1,21 +1,16 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import Navigation from "./components/Navigation";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p></p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation />
+
+      <About />
+      <Contact />
     </div>
   );
 }

@@ -7,6 +7,16 @@ import React from "react";
 
 function Navigation() {
   const linkStyle = { border: "1x black", padding: "5px" };
+
+  document.querySelectorAll('a[href^="#]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+
   return (
     <header className="main-header-navigation">
       <section
@@ -18,12 +28,13 @@ function Navigation() {
           justifyContent: "flex-start",
         }}
       >
-        <h2>
+        <h1>
           <a href="/">
             <title>Rachel Haddad's Portfolio</title>
           </a>
-        </h2>
+        </h1>
         <nav>
+          <h2>Rachel Haddad</h2>
           <ul>
             <li>
               <a style={linkStyle} href="#aboutme">
