@@ -7,7 +7,7 @@ import React from "react";
 
 function About() {
   return (
-    <div href="#aboutme">
+    <div href="#about">
       About Me
       <p>
         Hello! I'm Rachel Haddad, a passionate and qualified Full Stack Junior

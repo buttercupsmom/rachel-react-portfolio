@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
 
 function App() {
   return (
