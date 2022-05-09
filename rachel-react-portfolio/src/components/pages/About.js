@@ -4,6 +4,7 @@
 // THEN I see a recent photo or avatar of the developer and a short bio about them
 
 import React from "react";
+import "../styles/main.css";
 
 function About() {
   return (

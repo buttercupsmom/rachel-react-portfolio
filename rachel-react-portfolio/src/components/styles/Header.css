@@ -1,0 +1,15 @@
+header {
+  border-bottom: 4px solid;
+  border-radius: 5;
+  border-color: var(--text-color);
+  color: var(--text-color);
+  font: bold;
+  padding: 60px;
+}
+
+nav {
+  border: 4px transparent;
+  border-radius: 5;
+  color: var(--text-color);
+  text-align: end;
+}

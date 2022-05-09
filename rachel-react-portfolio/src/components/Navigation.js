@@ -4,6 +4,7 @@
 // THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 
 import React from "react";
+import "./styles/Header.css";
 
 function Navigation() {
   const linkStyle = { border: "1x black", padding: "5px" };

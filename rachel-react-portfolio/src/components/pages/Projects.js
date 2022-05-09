@@ -6,20 +6,19 @@
 // A link to the deployed application
 // A link to the corresponding GitHub repository
 import React from "react";
+import "../styles/Portfolio.css";
 
 function Projects() {
   return (
     <div className="projects-container">
       <div className="container">
         <div id="projectOne">
-          <a href="https://github.com/threemenandalady/project-two">
+          <a href="https://project-two-threeandalady.herokuapp.com/">
             Scott's Tots
           </a>
         </div>
         <div id="projectTwo">
-          <a href="https://github.com/The-camelCasers/project">
-            Do You Need an Umbrella?
-          </a>
+          <a href="The-camelCasers/pages">Do You Need an Umbrella?</a>
         </div>
         <div id="projectThree">
           <a href="https://github.com/buttercupsmom/social-network-startup">
@@ -28,17 +27,17 @@ function Projects() {
         </div>
         <div id="projectFour">
           {" "}
-          <a href="https://github.com/buttercupsmom/passwordgenerator">
+          <a href="https://buttercupsmom.github.io/passwordgenerator/">
             Password Generator
           </a>
         </div>
         <div id="projectFive">
-          <a href="https://github.com/buttercupsmom/codingquiz">
+          <a href="https://buttercupsmom.github.io/codingquiz/">
             Buttercup Quiz
           </a>
         </div>
         <div id="projectSix">
-          <a href="https://github.com/buttercupsmom/hw-6">Weather Dashboard</a>
+          <a href="https://buttercupsmom.github.io/hw-6/">Weather Dashboard</a>
         </div>
       </div>
     </div>
