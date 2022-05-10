@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Portfolio.css";
+import "../../index.css";
 import scottstots from "../../imgs/scottstots.png";
 import umbrella from "../../imgs/umbrella.gif";
 import social from "../../imgs/socialnetwork.png";
@@ -10,8 +11,6 @@ import weather from "../../imgs/WeatherDashboard.gif";
 function Projects() {
   return (
     <div className="projects-container">
-      {" "}
-      Projects
       <div className="container-one">
         <div id="projectOne" className="card">
           <a href="https://project-two-threeandalady.herokuapp.com/">
@@ -32,6 +31,7 @@ function Projects() {
         <div className="container-one">
           <div id="projectTwo" className="card">
             <a href="The-camelCasers/pages">Do You Need an Umbrella?</a>
+            <br />
             <img
               id="scotttot"
               src={umbrella}
@@ -89,7 +89,6 @@ function Projects() {
               Weather Dashboard
             </a>
             <img id="scotttot" src={weather} alt="gif of Weather Dashboard" />
-            <br />
             <a href="https://github.com/buttercupsmom/hw-6">Repository</a>
           </div>
         </div>
