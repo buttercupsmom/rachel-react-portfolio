@@ -5,6 +5,7 @@ header {
   color: var(--text-color);
   font: bold;
   padding: 60px;
+  font-size: large;
 }
 
 nav {
@@ -12,4 +13,18 @@ nav {
   border-radius: 5;
   color: var(--text-color);
   text-align: end;
+}
+
+.list {
+  display: block;
+  color: var(--text-color);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
 }

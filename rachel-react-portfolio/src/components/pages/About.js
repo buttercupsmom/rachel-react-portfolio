@@ -5,16 +5,20 @@
 
 import React from "react";
 import "../styles/main.css";
+import self from "../../imgs/self.jpeg";
 
 function About() {
   return (
-    <div href="#about">
-      About Me
-      <p>
-        Hello! I'm Rachel Haddad, a passionate and qualified Full Stack Junior
-        Web Developer! When I'm not programming, I love to spend as much time as
-        possible with my pup Buttercup.
-      </p>
+    <div className="container-about-me">
+      <h1 href="#aboutme">About Me</h1>
+      <div>
+        <p>
+          Hello! I'm Rachel Haddad, a passionate and qualified Full Stack Junior
+          Web Developer! When I'm not programming, I love to spend as much time
+          as possible with my pup Buttercup.
+        </p>
+        <img src={self} className="self" alt="Headshot of Rachel" />
+      </div>
     </div>
   );
 }

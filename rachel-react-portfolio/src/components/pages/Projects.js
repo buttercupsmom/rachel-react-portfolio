@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Portfolio.css";
-import "../../index.css";
+import "../styles/main.css";
 import scottstots from "../../imgs/scottstots.png";
 import umbrella from "../../imgs/umbrella.gif";
 import social from "../../imgs/socialnetwork.png";
@@ -10,7 +10,8 @@ import weather from "../../imgs/WeatherDashboard.gif";
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" href="#projects">
+      Projects
       <div className="container-one">
         <div id="projectOne" className="card">
           <a href="https://project-two-threeandalady.herokuapp.com/">

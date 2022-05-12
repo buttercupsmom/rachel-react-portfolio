@@ -3,7 +3,7 @@
   --text-color: #374e34;
 }
 
-body {
+div {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Roboto Condensed", sans-serif;

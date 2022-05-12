@@ -5,61 +5,33 @@
 
 import React from "react";
 import "./styles/Header.css";
+import "./styles/main.css";
 
 function Navigation() {
-  const linkStyle = { border: "1x black", padding: "5px" };
-
-  document.querySelectorAll('a[href^="#]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-  });
-
   return (
     <header className="main-header-navigation">
-      <section
-        style={{
-          display: "flex",
-          fontFamily: "helvetica",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-        }}
-      >
-        <h1>
-          <a href="/">
-            <title>Rachel Haddad's Portfolio</title>
-          </a>
-        </h1>
-        <nav>
-          <h2>Rachel Haddad</h2>
-          <ul>
-            <li>
-              <a style={linkStyle} href="#aboutme">
-                About Me
-              </a>
-            </li>
-            <li>
-              <a style={linkStyle} href="#portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a style={linkStyle} href="#contact">
-                Contact
-              </a>
-            </li>
-            <li>
-              <a style={linkStyle} href="#resume">
-                Resume
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+      <h1>
+        <a href="/">
+          <title>Rachel Haddad's Portfolio</title>
+        </a>
+      </h1>
+      <nav>
+        <h2>Rachel Haddad's Portfolio</h2>
+        <ul className="nav-menu">
+          <li className="list">
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li className="list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="list">
+            <a href="#contact">Contact</a>
+          </li>
+          <li className="list">
+            <a href="#resume">Resume</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
