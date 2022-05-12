@@ -19,17 +19,25 @@ function Navigation() {
         <h2>Rachel Haddad's Portfolio</h2>
         <ul className="nav-menu">
           <li className="list">
-            <a href="#aboutme">About Me</a>
+            <a href="#aboutme" onClick={"aboutme"}>
+              About Me
+            </a>
           </li>
           <li className="list">
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={"projects"}>
+              Projects
+            </a>
           </li>
           <li className="list">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={"contact"}>
+              Contact
+            </a>
           </li>
-          <li className="list">
-            <a href="#resume">Resume</a>
-          </li>
+          {/* <li className="list">
+            <a href="#resume" onClick={() => handlePageChange("Resume")}>
+              Resume
+            </a> */}
+          {/* </li> */}
         </ul>
       </nav>
     </header>
