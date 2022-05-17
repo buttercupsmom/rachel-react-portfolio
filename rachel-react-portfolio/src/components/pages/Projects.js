@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Portfolio.css";
-import "../styles/main.css";
+import "../Portfolio.css";
+import "../main.css";
 import scottstots from "../../imgs/scottstots.png";
 import umbrella from "../../imgs/umbrella.gif";
 import social from "../../imgs/socialnetwork.png";
@@ -17,16 +17,14 @@ function Projects() {
           <a href="https://project-two-threeandalady.herokuapp.com/">
             Scott's Tots
           </a>
-          <div className="container">
-            <img
-              id="scotttot"
-              alt="shot of Scott's tots messageboard"
-              src={scottstots}
-            />
-            <a href="https://github.com/threemenandalady/project-two">
-              Repository
-            </a>
-          </div>
+          <img
+            id="scotttot"
+            alt="shot of Scott's tots messageboard"
+            src={scottstots}
+          />
+          <a href="https://github.com/threemenandalady/project-two">
+            Repository
+          </a>
         </div>
         <br />
         <div className="container-one">

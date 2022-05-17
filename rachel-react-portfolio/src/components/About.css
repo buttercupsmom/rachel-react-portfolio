@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  box-shadow: 3px, 3px, 3px, 3px, grey;
+  display: block;
+  padding: auto;
+  border: auto;
+}
+
+#self-image {
+  height: auto;
+  border: 7px solid #374e34;
+  border-radius: 20px;
+  width: auto;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.container-child {
+  display: block;
+  margin: auto;
+  padding: auto;
+}

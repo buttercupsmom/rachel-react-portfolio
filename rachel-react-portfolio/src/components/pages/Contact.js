@@ -8,6 +8,8 @@
 // THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 
 import React from "react";
+import "../Contact.css";
+import "../main.css";
 
 function Contact() {
   const handleFormSubmit = (e) => {
@@ -50,11 +52,25 @@ function Contact() {
         </ul>
 
         {/* aside */}
-        <form>
-          <input name="name" type="text" placeholder="Name"></input>
-          <input name="email" type="text" placeholder="Email"></input>
-          <textarea name="text" placeholder="Feedback!"></textarea>
-          <button type="button" onClick={handleFormSubmit}>
+        <form className="form">
+          <input
+            className="input"
+            name="name"
+            type="text"
+            placeholder="Name"
+          ></input>
+          <input
+            className="input"
+            name="email"
+            type="text"
+            placeholder="Email"
+          ></input>
+          <textarea
+            className="textarea"
+            name="text"
+            placeholder="Say Hey!"
+          ></textarea>
+          <button className="button" type="button" onClick={handleFormSubmit}>
             Submit
           </button>
         </form>

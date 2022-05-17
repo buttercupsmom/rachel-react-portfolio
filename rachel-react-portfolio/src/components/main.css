@@ -1,0 +1,15 @@
+:root {
+  --background-color: #f3d2d1;
+  --text-color: #374e34;
+  --sage: #b7bca3;
+  --off-white: #f5f5f5;
+  --mustard: #d7bb84;
+
+  --font: "Kanit", sans-serif;
+}
+
+div {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font);
+}

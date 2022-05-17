@@ -4,8 +4,8 @@
 // THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 
 import React from "react";
-import "./styles/Header.css";
-import "./styles/main.css";
+import "../Header.css";
+import "../main.css";
 
 function Navigation() {
   return (
@@ -19,25 +19,15 @@ function Navigation() {
         <h2>Rachel Haddad's Portfolio</h2>
         <ul className="nav-menu">
           <li className="list">
-            <a href="#aboutme" onClick={"aboutme"}>
-              About Me
-            </a>
+            <a href="#aboutme">About Me</a>
+            {/* replace with Link tag */}
           </li>
           <li className="list">
-            <a href="#projects" onClick={"projects"}>
-              Projects
-            </a>
+            <a href="#projects">Projects</a>
           </li>
           <li className="list">
-            <a href="#contact" onClick={"contact"}>
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
-          {/* <li className="list">
-            <a href="#resume" onClick={() => handlePageChange("Resume")}>
-              Resume
-            </a> */}
-          {/* </li> */}
         </ul>
       </nav>
     </header>

@@ -1,10 +1,9 @@
 header {
   border-bottom: 4px solid;
-  border-radius: 5;
+  border-radius: auto;
   border-color: var(--text-color);
   color: var(--text-color);
   font: bold;
-  padding: 60px;
   font-size: large;
 }
 
