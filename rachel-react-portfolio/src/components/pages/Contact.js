@@ -1,44 +1,53 @@
-// WHEN I am presented with the Contact section
-// THEN I see a contact form with fields for a name, an email address, and a message
-// WHEN I move my cursor out of one of the form fields without entering text
-// THEN I receive a notification that this field is required
-// WHEN I enter text into the email address field
-// THEN I receive a notification if I have entered an invalid email address
-// WHEN I am presented with the Resume section
-// THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-
 import React from "react";
 import "../Contact.css";
 import "../main.css";
 
-function Contact() {
+const Contact = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
   };
-  // let emailArray = [];
-  // let contactForm = document.forms["contactForm"];
-  // if (!contactForm) {
-  //   contactForm = document.contactForm;
-  // }
-  // let email = contactForm.email.value;
-  // emailArray.push(email);
 
   return (
-    <div>
-      <div className="container">
-        <h1 href="#contact">Contact</h1>
+    <>
+      <fieldset className="container">
+        <legend>Contact</legend>
+        {/* <Link to="/contact">Contact</Link> */}
         <ul>
           <li>
-            <a href="https://github.com/buttercupsmom">GitHub</a>
+            <a
+              href="https://github.com/buttercupsmom"
+              target="{_blank}"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/rachelehaddad/">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/rachelehaddad/"
+              target="{_blank}"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a href="tel:7736770024">773.677.0024</a>
+            <a
+              href="tel:7736770024"
+              target="{_blank}"
+              rel="noopener noreferrer"
+            >
+              773.677.0024
+            </a>
           </li>
           <li>
-            <a href="mailto:yarkony.rachel@gmail.com">Email</a>
+            <a
+              href="mailto:yarkony.rachel@gmail.com"
+              target="{_blank}"
+              rel="noopener noreferrer"
+            >
+              Email
+            </a>
           </li>
           <li href="#resume">
             <a
@@ -74,9 +83,9 @@ function Contact() {
             Submit
           </button>
         </form>
-      </div>
-    </div>
+      </fieldset>
+    </>
   );
-}
+};
 
 export default Contact;
