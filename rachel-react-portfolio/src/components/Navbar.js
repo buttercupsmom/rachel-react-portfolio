@@ -4,34 +4,28 @@
 // THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Header.css";
 import "./main.css";
 
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="nav-container">
       <h1>Rachel Haddad's Portfolio</h1>
       <ul className="nav-menu">
-        <li className="nav-link">
-          <Link to="/rachel-react-portfolio">
-            <h1>Home</h1>
-          </Link>
-        </li>
         <li className="nav">
-          <Link to="/about">
+          <a href="#about" onClick={() => handlePageChange("About")}>
             <h1>About Me</h1>
-          </Link>
+          </a>
         </li>
         <li className="nav">
-          <Link to="/projects">
+          <a href="#projects" onClick={() => handlePageChange("Projects")}>
             <h1>Projects</h1>
-          </Link>
+          </a>
         </li>
         <li className="nav">
-          <Link to="/contact">
+          <a href="#contact" onClick={() => handlePageChange("Contact")}>
             <h1>Contact</h1>
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
