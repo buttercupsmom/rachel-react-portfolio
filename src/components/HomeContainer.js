@@ -21,7 +21,7 @@ export default function HomeContainer() {
   const handlePageChange = (page) => SetCurrentPage(page);
 
   return (
-    <div>
+    <div className="home">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       {/* <Footer /> */}
