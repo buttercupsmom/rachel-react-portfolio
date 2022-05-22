@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Rachel's React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Licesnse: MIT](https://img.shields.io/badge/badge-MIT-blue)
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Decscription](./README.md#description)
+- [Technologies Used](./README.md#technologies-used)
+- [Behavior](./README.md#behavior)
+- [Screenshot](./README.md#screenshot)
+- [Author](./README.md#author)
+- [Links](./README.md#links)
+- [Questions](./README.md#questions)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Version 4.0 of Rachel Haddad's personal portfolio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+- React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Behavior
 
-### `npm run build`
+```
+WHEN user wants to view 'about me' in the navigation, THEN user clicks 'about me', THEN is taken to about me section of Portfolio, as such for each title in the navigation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+WHEN viewing work, user is given a link to personal GitHub, a gif or screenshot of the project, and a caption.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+WHEN user wants to view work, THEN user clicks title of Project, THEN are sent to deployed pages via GitHub.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+WHEN user wants to view GitHub, THEN user clicks GitHub link, THEN user is sent to personal GitHub Profile.
 
-### `npm run eject`
+WHEN user wants to view LinkedIn, THEN user clicks LinkedIn link, THEN user is sent to personal LinkedIn Profile.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+WHEN user wants to view resume, THEN user clicks resume link, THEN new window opens with person resume.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+WHEN user wants to send an email to me, THEN user clicks email link, THEN user is sent send an email.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshot
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- ![Rachel's Portfolio]() -->
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Rachel Haddad
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Links
 
-### Code Splitting
+<!--
+- Here is the repo: [Repo](https://github.com/buttercupsmom/thePortfolio)
+- Here is the page: [Page](https://buttercupsmom.github.io/thePortfolio/) -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Questions
 
-### Analyzing the Bundle Size
+### If you have any further questions or comments:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Direct message me on [GitHub](https://github.com/buttercupsmom)
+- [Email me](mailto:yarkony.rachel@gmail.com)
