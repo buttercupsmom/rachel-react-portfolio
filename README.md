@@ -21,7 +21,6 @@
 - HTML
 - CSS
 - Javascript
-- Bootstrap
 - React
 
 ## Behavior
@@ -44,7 +43,7 @@ WHEN user wants to send an email to me, THEN user clicks email link, THEN user i
 
 ## Screenshot
 
-<!-- ![Rachel's Portfolio]() -->
+![Screenshot of Rachel's Portfolio](/src/imgs/Screen%20Shot%202022-05-22%20at%205.46.33%20PM.png)
 
 ## Author
 
@@ -52,9 +51,8 @@ WHEN user wants to send an email to me, THEN user clicks email link, THEN user i
 
 ### Links
 
-<!--
 - Here is the repo: [Repo](https://github.com/buttercupsmom/thePortfolio)
-- Here is the page: [Page](https://buttercupsmom.github.io/thePortfolio/) -->
+- Here is the page: [Page](https://mighty-caverns-90670.herokuapp.com/)
 
 ## Questions
 
