@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import About from "./pages/About";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 
@@ -24,7 +24,7 @@ export default function HomeContainer() {
     <div className="home">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

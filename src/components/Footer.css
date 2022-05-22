@@ -1,0 +1,21 @@
+.container {
+  padding-bottom: 60px;
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  background-color: var(--mustard);
+  border: 4px solid;
+  color: var(--textcolor);
+  text-align: center;
+  justify-content: center;
+  font-size: 22px;
+  position: absolute;
+  line-height: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}

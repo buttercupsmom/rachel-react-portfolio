@@ -9,7 +9,7 @@ const About = () => {
       <div className="container">
         <h1 className="about-title">About Me</h1>
         <div className="container-child">
-          <p>
+          <p className="about-bio">
             Hello! I'm Rachel Haddad, a passionate and qualified Full Stack
             Junior Web Developer! When I'm not programming, I love to spend as
             much time as possible with my pup Buttercup.

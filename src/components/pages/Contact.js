@@ -10,11 +10,11 @@ const Contact = () => {
   return (
     <>
       <fieldset className="container">
-        <legend>Contact</legend>
-        {/* <Link to="/contact">Contact</Link> */}
+        <h1 className="contact-title">Contact</h1>
         <ul>
           <li>
             <a
+              className="contact-me"
               href="https://github.com/buttercupsmom"
               target="{_blank}"
               rel="noopener noreferrer"
@@ -24,6 +24,7 @@ const Contact = () => {
           </li>
           <li>
             <a
+              className="contact-me"
               href="https://www.linkedin.com/in/rachelehaddad/"
               target="{_blank}"
               rel="noopener noreferrer"
@@ -33,6 +34,7 @@ const Contact = () => {
           </li>
           <li>
             <a
+              className="contact-me"
               href="tel:7736770024"
               target="{_blank}"
               rel="noopener noreferrer"
@@ -42,6 +44,7 @@ const Contact = () => {
           </li>
           <li>
             <a
+              className="contact-me"
               href="mailto:yarkony.rachel@gmail.com"
               target="{_blank}"
               rel="noopener noreferrer"
@@ -49,7 +52,7 @@ const Contact = () => {
               Email
             </a>
           </li>
-          <li href="#resume">
+          <li className="contact-me" href="#resume">
             <a
               href="https://docs.google.com/document/d/1X41EEi76ObMWuU3gg6Rn042EGSM_k7YO-PbP_cxsOKs/edit?usp=sharing"
               target="{_blank}"
@@ -60,7 +63,6 @@ const Contact = () => {
           </li>
         </ul>
 
-        {/* aside */}
         <form className="form">
           <input
             className="input"

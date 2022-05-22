@@ -53,5 +53,6 @@
   box-shadow: 3px, 3px, 3px, 3px, grey;
   display: block;
   padding: auto;
+  border: none;
   border: auto;
 }
