@@ -11,8 +11,14 @@ const About = () => {
         <div className="container-child">
           <p className="about-bio">
             Hello! I'm Rachel Haddad, a passionate and qualified Full Stack
-            Junior Web Developer! When I'm not programming, I love to spend as
-            much time as possible with my pup Buttercup.
+            Junior Web Developer with a background in customer service. I
+            recently earned my Certificate of Completion for Full Stack Web
+            Development from Northwestern University Coding Bootcamp, gaining
+            skills in JavaScript ES6+, CSS, HTML, Git, Nodejs, jQuery,
+            Bootstrap, MySQL, ExpressJS, Sequelize, MongoDB, Mongoose ODM, and
+            accessibility. I am elated to apply my newly developed skills to a
+            Junior Level Position. When I'm not coding, I enjoy spending time
+            with my pup Buttercup, friends and family!
           </p>
           <img id="self-image" src={self} alt="Headshot of Rachel" />
         </div>
