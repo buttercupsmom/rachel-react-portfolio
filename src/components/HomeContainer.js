@@ -9,6 +9,10 @@ export default function HomeContainer() {
   const [currentPage, SetCurrentPage] = useState("About");
 
   const renderPage = () => {
+    if (currentPage === "/") {
+      return <About />;
+    }
+
     if (currentPage === "About") {
       return <About />;
     }

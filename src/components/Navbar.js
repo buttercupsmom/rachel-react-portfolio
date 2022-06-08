@@ -5,7 +5,9 @@ import "./main.css";
 function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="nav-container">
-      <h1 className="title">Rachel Haddad's Portfolio</h1>
+      <a className="title" href="/" onClick={() => handlePageChange("About")}>
+        Rachel Haddad's Portfolio
+      </a>
       <ul className="nav-menu">
         <li className="nav">
           <a href="#about" onClick={() => handlePageChange("About")}>
