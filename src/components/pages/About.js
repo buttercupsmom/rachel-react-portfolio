@@ -7,7 +7,9 @@ const About = () => {
   return (
     <>
       <div className="container">
+        <br></br>
         <h1 className="about-title">About Me</h1>
+        <br></br>
         <div className="container-child">
           <p className="about-bio">
             Hello! I'm Rachel Haddad, a passionate and qualified Full Stack
@@ -20,6 +22,7 @@ const About = () => {
             Junior Level Position. When I'm not coding, I enjoy spending time
             with my pup Buttercup, friends and family!
           </p>
+          <br></br>
           <img id="self-image" src={self} alt="Headshot of Rachel" />
         </div>
       </div>

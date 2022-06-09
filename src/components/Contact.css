@@ -47,6 +47,7 @@
   border-color: var(--text-color);
   color: var(--text-color);
   font-size: 36px;
+  padding: 0.7rem;
 }
 
 .container {
@@ -59,4 +60,47 @@
 
 .contact-me {
   font-size: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+span:before,
+span:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: var(--text-color);
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: var(--text-color);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: var(--text-color);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
