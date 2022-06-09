@@ -3,10 +3,10 @@ import "../Portfolio.css";
 import "../main.css";
 import scottstots from "../../imgs/scottstots.png";
 import DoYouNeedanUmbrella from "../../imgs/DoYouNeedanUmbrella.gif";
-import social from "../../imgs/socialnetwork.png";
 import password from "../../imgs/passwordgen.gif";
 import buttercup from "../../imgs/buttercupquiz.png";
 import weather from "../../imgs/WeatherDashboard.gif";
+import letterScramble from "../../imgs/letterScramble.png";
 
 function Projects() {
   return (
@@ -63,19 +63,19 @@ function Projects() {
           <div className="container-one">
             <div className="card">
               <a
-                href="https://github.com/buttercupsmom/social-network-startup"
+                href="https://alphabet-game-project.herokuapp.com/"
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
-                Social Network Startup
+                Letter Scramble
               </a>
               <img
                 id="scotttot"
-                src={social}
-                alt="shot of Social Network using Thunderclients"
+                src={letterScramble}
+                alt="screenshot of Letter Scramble"
               />
               <a
-                href="https://github.com/buttercupsmom/social-network-startup"
+                href="https://github.com/alphabetgame/projectthree"
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
