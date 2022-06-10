@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import { validateEmail } from "../../utils/helpers";
 import "../Contact.css";
 import "../main.css";
 
-const Contact = () => {
+function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === "name") {
+      setName(inputValue);
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateEmail(email)) {
+      setErrorMessage("Invalid email");
+      return;
+    }
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -76,31 +105,42 @@ const Contact = () => {
           </li>
         </ul>
 
-        <form className="form">
+        <form className="form" method="POST">
           <input
+            onChange={handleInputChange}
+            value={name}
             className="input"
             name="name"
             type="text"
             placeholder="Name"
           ></input>
           <input
+            onChange={handleInputChange}
             className="input"
             name="email"
+            value={email}
             type="text"
             placeholder="Email"
           ></input>
-          <textarea
+          <input
             className="textarea"
+            onChange={handleInputChange}
             name="text"
+            value={message}
             placeholder="Say Hey!"
-          ></textarea>
+          ></input>
           <button className="button" type="button" onClick={handleFormSubmit}>
             Submit
           </button>
         </form>
+        {errorMessage && (
+          <div>
+            <p>{errorMessage}</p>
+          </div>
+        )}
       </fieldset>
     </>
   );
-};
+}
 
 export default Contact;
