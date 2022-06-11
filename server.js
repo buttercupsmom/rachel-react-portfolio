@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-// const xoauth2 = require("xoauth2");
 const dotenv = require("dotenv");
 dotenv.config();
 
