@@ -1,72 +1,35 @@
-import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
+import React from "react";
 import "../Contact.css";
 import "../main.css";
 
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleInputChange = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    if (inputType === "name") {
-      setName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    if (!validateEmail(email)) {
-      setErrorMessage("Invalid email");
-      return;
-    }
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
   return (
     <>
       <fieldset className="container">
-        <h1 className="contact-title">Contact</h1>
-        <ul>
-          <li>
-            <span>
+        <h1 className="contact-title">Contact Me!</h1>
+        <div className="sources">
+          <ul>
+            <li data-text="Github">
               <a
                 className="contact-me"
                 href="https://github.com/buttercupsmom"
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
-                GitHub
+                <i className="fa-brands fa-github"></i> GitHub
               </a>
-            </span>
-          </li>
-          <li>
-            <span>
+            </li>
+            <li data-text="Linkedin">
               <a
                 className="contact-me"
                 href="https://www.linkedin.com/in/rachelehaddad/"
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                <i className="fa-brands fa-linkedin"> </i> Linkedin
               </a>
-            </span>
-          </li>
-          <li>
-            <span>
+            </li>
+            <li data-text="Cell">
               {" "}
               <a
                 className="contact-me"
@@ -74,12 +37,10 @@ function Contact() {
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
-                773.677.0024
+                <i className="fa-solid fa-mobile-button"></i> 773.677.0024
               </a>
-            </span>
-          </li>
-          <li>
-            <span>
+            </li>
+            <li data-text="Email">
               {" "}
               <a
                 className="contact-me"
@@ -87,57 +48,24 @@ function Contact() {
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
-                Email
+                {" "}
+                <i className="fa-solid fa-at"> </i> Email
               </a>
-            </span>
-          </li>
-          <li className="contact-me" href="#resume">
-            <span>
+            </li>
+            <li className="contact-me" href="#resume">
               {" "}
               <a
                 href="https://docs.google.com/document/d/1X41EEi76ObMWuU3gg6Rn042EGSM_k7YO-PbP_cxsOKs/edit?usp=sharing"
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
-                Resume --click to download!
+                {" "}
+                <i className="fa-thin fa-file-arrow-down"></i> Resume --click to
+                view!
               </a>
-            </span>
-          </li>
-        </ul>
-
-        <form className="form" method="POST">
-          <input
-            onChange={handleInputChange}
-            value={name}
-            className="input"
-            name="name"
-            type="text"
-            placeholder="Name"
-          ></input>
-          <input
-            onChange={handleInputChange}
-            className="input"
-            name="email"
-            value={email}
-            type="text"
-            placeholder="Email"
-          ></input>
-          <input
-            className="textarea"
-            onChange={handleInputChange}
-            name="text"
-            value={message}
-            placeholder="Say Hey!"
-          ></input>
-          <button className="button" type="button" onClick={handleFormSubmit}>
-            Submit
-          </button>
-        </form>
-        {errorMessage && (
-          <div>
-            <p>{errorMessage}</p>
-          </div>
-        )}
+            </li>
+          </ul>
+        </div>
       </fieldset>
     </>
   );

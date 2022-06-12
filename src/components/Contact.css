@@ -62,45 +62,79 @@
   font-size: 22px;
 }
 
+.sources {
+  padding: 2rem;
+}
+
+/* Hover effect from https://codepen.io/VladimirVaize/pen/PoPXygB */
 ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
   list-style: none;
 }
-
-span {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  text-decoration: none;
+ul li::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 6em;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 20px;
+  transition: 0.5s;
+  white-space: nowrap;
 }
-
-span:before,
-span:after {
+/* ul li:hover::before {
+  opacity: 0.05;
+  letter-spacing: 5px;
+} */
+ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  text-decoration: none;
+  background: var(--brown);
+  color: #fff;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.5s;
+  font-family: var(--font);
+  z-index: 1;
+}
+ul:hover li a {
+  opacity: 0;
+}
+ul li a:hover {
+  transform: scale(1.4);
+  z-index: 1000;
+  background: var(--text-color);
+  opacity: 1;
+}
+ul li a::before {
   content: "";
   position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: var(--text-color);
-}
-
-span:before {
-  left: -2.5px;
-}
-span:after {
-  right: 2.5px;
-  background: var(--text-color);
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span:hover:before {
-  background: var(--text-color);
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span:hover:after {
-  background: transparent;
-  width: 100%;
+  top: 0;
+  left: -100px;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+  transform: skewX(35deg);
   transition: 0s;
+}
+ul li a:hover::before {
+  left: calc(100% + 100px);
+  transition: 0.5s;
+  transition-delay: 0.2s;
 }
