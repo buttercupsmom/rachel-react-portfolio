@@ -55,7 +55,7 @@ function Contact() {
             <li className="contact-me" href="#resume">
               {" "}
               <a
-                href="https://docs.google.com/document/d/1X41EEi76ObMWuU3gg6Rn042EGSM_k7YO-PbP_cxsOKs/edit?usp=sharing"
+                href="https://docs.google.com/document/d/e/2PACX-1vQ8hf02volM08dcAU9fvE2rMTTq4DxdWC8-OKju5c5YKCPRGe5K8hc34t3w5avT9cGXAQLlOh2nc5gp/pub"
                 target="{_blank}"
                 rel="noopener noreferrer"
               >
